@@ -10,15 +10,14 @@
         android:id="@+id/tvtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
         android:text="SHOW TOAST"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="148dp"
+        android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:fontFamily="sans-serif"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <EditText
         android:id="@+id/etUserMessage"
         android:layout_width="wrap_content"
@@ -53,17 +52,28 @@
         android:backgroundTint="#89DD27"
 
         />
+
     <Button
         android:id="@+id/btnshare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Share Message"
-        app:layout_constraintTop_toBottomOf="@id/btnsenddata"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="40dp"
         android:backgroundTint="#069E8F"
-        />
+        android:text="Share Message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnsenddata" />
+
+    <Button
+        android:id="@+id/btnshowactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demo Activity"
+        app:layout_constraintBottom_toTopOf="@+id/btnshare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsenddata" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
