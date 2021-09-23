@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOW TOAST"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="148dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        />
+    <EditText
+        android:id="@+id/etUserMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:hint="Enter your Message here....."
+
+        />
+    <Button
+        android:id="@+id/btnshowtoast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etUserMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:text="Show Toast"
+        android:backgroundTint="@color/black"
+        />
+    <Button
+        android:id="@+id/btnsenddata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnshowtoast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:text="SEND DATA TO NEXT ACTIVITY"
+        android:backgroundTint="#89DD27"
+
+        />
+    <Button
+        android:id="@+id/btnshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Message"
+        app:layout_constraintTop_toBottomOf="@id/btnsenddata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#069E8F"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
