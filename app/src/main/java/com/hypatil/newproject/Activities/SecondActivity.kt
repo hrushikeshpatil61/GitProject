@@ -1,9 +1,9 @@
-package com.hypatil.newproject
+package com.hypatil.newproject.Activities
 
 import android.os.Bundle
-import android.view.ActionMode
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.hypatil.newproject.R
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity: AppCompatActivity() {

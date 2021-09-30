@@ -1,14 +1,12 @@
-package com.hypatil.newproject
+package com.hypatil.newproject.adaptors
 
 import android.content.Context
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.hypatil.newproject.HobbiesAdapter.*
-import com.hypatil.newproject.Supplyer.hobbies
-import kotlinx.android.synthetic.main.activity_second.view.*
+import com.hypatil.newproject.Hobby
+import com.hypatil.newproject.R
 import kotlinx.android.synthetic.main.list_item.view.*
 
 class HobbiesAdapter(val context: Context, val hobbies:List<Hobby>):RecyclerView.Adapter<HobbiesAdapter.myViewHolder>(){
@@ -27,7 +25,7 @@ class HobbiesAdapter(val context: Context, val hobbies:List<Hobby>):RecyclerView
         return hobbies.size
     }
     inner class myViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        fun setData(hobby: Hobby?,pos:Int) {
+        fun setData(hobby: Hobby?, pos:Int) {
             itemView.tvTitle1.text=hobby!!.title;
         }
 

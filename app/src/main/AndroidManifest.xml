@@ -4,13 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_shareapp"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_shareapp_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewProject">
         <activity
-            android:name=".MainActivity"
+            android:name="com.hypatil.newproject.Activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,8 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"/>
-        <activity android:name=".Recycler_viewActivity"/>
+        <activity android:name="com.hypatil.newproject.Activities.SecondActivity"/>
+        <activity android:name="com.hypatil.newproject.Activities.Recycler_viewActivity"/>
     </application>
 
 </manifest>

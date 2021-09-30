@@ -1,9 +1,10 @@
-package com.hypatil.newproject
+package com.hypatil.newproject.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.hypatil.newproject.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         }
         btnsenddata.setOnClickListener{
             val message: String =etUserMessage.text.toString()
-            val intent = Intent(this,SecondActivity::class.java)
+            val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra("msg1",message);
             startActivity(intent)
 
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent.createChooser(intent,"Share to"))
         }
         btnshowactivity.setOnClickListener {
-            val intent=Intent(this,Recycler_viewActivity::class.java)
+            val intent=Intent(this, Recycler_viewActivity::class.java)
             startActivity(intent)
         }
 
